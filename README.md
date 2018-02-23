@@ -174,7 +174,7 @@ http://[ace-gate-way部署服务器]:[配置端口]/api/authen/auth
 以下配置信息来自ace-gate-way的application.yml
 ![img](http://ofsc32t59.bkt.clouddn.com/17-07-14/1499988024769.jpg)
 ```
-[${gate.api.header}]:[${gate.api.tokenHead}][空格][神奇的token]
+${gate.api.header}:${gate.api.tokenHead}空格[神奇的token]
 如默认格式：
 access-token:ApiGateToken eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJnYXRlLWRlbW8tY2xpZW50IiwiY3JlYXRlZCI6MTQ5OTk0NzAzNzE1NCwiZXhwIjoxNDk5OTU0MjM3fQ.eL3Ucd2Oh166PDcmHLsKK2A0uJZ6QPxLqRac6enQacBEgQwc2I0qJtkui1V0WjB70VWHpRbHgmzps_dM9jKg0A
 ```

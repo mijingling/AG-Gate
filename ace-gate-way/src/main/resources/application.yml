@@ -17,6 +17,7 @@ spring:
     redis:
         database: 1
         host: 127.0.0.1
+        password: 123456
         pool:
             max-active: 20
     datasource:
