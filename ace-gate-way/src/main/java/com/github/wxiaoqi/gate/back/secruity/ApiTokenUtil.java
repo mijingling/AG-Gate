@@ -120,7 +120,6 @@ public class ApiTokenUtil implements Serializable {
 
     public Boolean validateToken(String token, ClientInfo info) {
         final String clientId = getClientIdFromToken(token);
-        final Date created = getCreatedDateFromToken(token);
         return (
                 clientId.equals(info.getCode())
                         && !isTokenExpired(token));

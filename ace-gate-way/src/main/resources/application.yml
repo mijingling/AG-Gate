@@ -74,7 +74,7 @@ gate:
     api:
         header: access-token  #http 请求头key
         secret: mySecret   #jwt 加密密钥
-        expiration: 7200  # 过期秒数
+        expiration: 7200  # 过期秒数(7200s=120mins=2h)
         tokenHead: ApiGateToken # 认证token前缀
 
 hystrix:

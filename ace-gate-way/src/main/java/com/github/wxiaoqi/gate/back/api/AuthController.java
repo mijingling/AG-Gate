@@ -1,10 +1,5 @@
 package com.github.wxiaoqi.gate.back.api;
 
-import com.github.wxiaoqi.gate.back.biz.AuthBiz;
-import com.github.wxiaoqi.gate.back.secruity.ApiAuthenticationRequest;
-import com.github.wxiaoqi.gate.back.secruity.ApiAuthenticationResponse;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
+import com.github.wxiaoqi.gate.back.biz.AuthBiz;
+import com.github.wxiaoqi.gate.back.secruity.ApiAuthenticationRequest;
+import com.github.wxiaoqi.gate.back.secruity.ApiAuthenticationResponse;
+
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping("api/authen")

@@ -3,6 +3,7 @@ package com.github.wxiaoqi.gate.back.biz;
 import com.github.wxiaoqi.gate.agent.vo.authority.PermissionInfo;
 import com.github.wxiaoqi.gate.agent.vo.gate.ClientInfo;
 import com.github.wxiaoqi.gate.back.service.GateService;
+import com.github.wxiaoqi.gate.common.constant.UserConstant;
 import com.github.wxiaoqi.gate.back.secruity.ApiTokenUtil;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
@@ -20,7 +21,7 @@ public class AuthBiz{
 
     private ApiTokenUtil jwtTokenUtil;
     private GateService gateService;
-    private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
+    private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(UserConstant.PW_ENCORDER_SALT);
 
     @Value("${gate.api.tokenHead}")
     private String tokenHead;
@@ -82,4 +83,5 @@ public class AuthBiz{
         }
         return true;
     }
+    
 }
